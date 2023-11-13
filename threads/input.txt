@@ -1,0 +1,7 @@
+antNum 5
+foodTime 10
+foodDist 2
+pheromoneDist 1
+quantity 1
+foodPortionInPercent 10
+endTimeInMinutes 5
