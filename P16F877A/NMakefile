@@ -1,0 +1,19 @@
+# MPLAB IDE generated this makefile for use with Microsoft `nmake'.
+# Project: test.mcp
+# Date: Thu Jul 27 20:57:42 2023
+
+AS = MPASMWIN.exe
+CC = 
+LD = mplink.exe
+AR = mplib.exe
+RM = del
+
+"first.cof" : "first.o"
+	$(CC) /p16F877A "first.o" /u_DEBUG /z__MPLAB_BUILD=1 /z__MPLAB_DEBUG=1 /o"first.cof" /M"first.map" /W /x
+
+"first.o" : "first.asm" "P16F877A.INC" "LCDIS.INC"
+	$(AS) /q /p16F877A "first.asm" /l"first.lst" /e"first.err" /d__DEBUG=1
+
+"clean" : 
+	$(CC) "first.o" "first.hex" "first.err" "first.lst" "first.cof"
+
